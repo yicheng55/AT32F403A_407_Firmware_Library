@@ -1,0 +1,220 @@
+<mxfile host="65bd71144e">
+    <diagram name="RTC_Clock_Structure" id="rtc-clock-diagram">
+        <mxGraphModel dx="1186" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1200" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="RTC 時鐘結構圖" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="20" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="LEXT" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="80" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="LICK" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="140" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="5" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="HEXT" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="200" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="DIV" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="200" width="60" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="RTCSEL" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="60" width="80" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="RTC CLK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="150" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="20bit divider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="120" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="1Hz" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="150" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="32bit counter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="120" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="7" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="200" y="250" as="sourcePoint"/>
+                        <mxPoint x="250" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4" target="7" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="200" y="250" as="sourcePoint"/>
+                        <mxPoint x="250" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6" target="7" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="200" y="250" as="sourcePoint"/>
+                        <mxPoint x="250" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7" target="9" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="200" y="250" as="sourcePoint"/>
+                        <mxPoint x="250" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="9" target="11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="200" y="250" as="sourcePoint"/>
+                        <mxPoint x="250" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="RTC 的時鐘源共有 3 種可以選擇:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="280" width="300" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="• LEXT: 外部低速晶振, 通常為 32.768kHz" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="320" width="350" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="• LICK: 內部低速晶振, 通常典型值為 40kHz 範圍 (30~60kHz)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="350" width="400" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="• HEXT_DIV: 外部高速晶振分頻後得到的時鐘" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="380" width="350" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="時鐘源比較表" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="416" y="250" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="時鐘源" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="416" y="280" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="頻率" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="496" y="280" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="優點" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="606" y="280" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="缺點" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="786" y="280" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="LEXT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="416" y="310" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="32.768kHz" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="496" y="310" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="精度最高, 能在電池供電下以及低功耗模式下工作" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="606" y="310" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="需要一顆晶振, 增加元件成本, 增大 PCB 佈線面積" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="786" y="310" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="LICK" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="416" y="340" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="典型值 40kHz, 範圍(30kHz~60kHz)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="496" y="340" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="能在電池供電下以及低功耗模式下工作, 省一顆晶振, 降低了 PCB 佈線面積" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="606" y="340" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="時間精度低, 時間不準" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="786" y="340" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="HEXT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="416" y="370" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="主晶振頻率" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="496" y="370" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="精度也比較高(取決於主晶振精度), 節省一顆晶振, 降低了PCB佈線面積" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="606" y="370" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="不能在電池供電和低功耗模式下工作" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="786" y="370" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="RTC_CLK 通過20位預分頻器後獲得1Hz時鐘, 計算公式如下:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="490" width="400" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="f(1Hz) = f(RTC_CLK) / (DIV + 1)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="510" width="300" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="表4. 分頻設置舉例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="550" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="時鐘源" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="590" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="頻率" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="590" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="DIV" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="590" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="日曆時鐘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="590" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="LEXT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="620" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="32.768kHz" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="620" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="32767" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="620" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="1Hz" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="620" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="LICK" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="650" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="典型值 40kHz" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="650" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="39999" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="650" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="1Hz" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="650" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="HEXT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="680" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="8MHz, 128分頻" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="680" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="62499" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="680" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="1Hz" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="680" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;預分頻器設置&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RTC 分頻設置相關函數&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="440" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="設置 RTC 預分頻器:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="510" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="void rtc_divider_set(uint32_t div_value);" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Courier New;fillColor=#f8f9fa;strokeColor=#dee2e6;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="530" width="300" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="獲取 RTC 預分頻器值:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="570" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="uint32_t rtc_divider_get(void);" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Courier New;fillColor=#f8f9fa;strokeColor=#dee2e6;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="590" width="300" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="計算範例:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="630" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="LEXT: 32768 / (32767 + 1) = 1Hz" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="650" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="LICK: 40000 / (39999 + 1) = 1Hz" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="670" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="HEXT: 62500 / (62499 + 1) = 1Hz" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="690" width="300" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
