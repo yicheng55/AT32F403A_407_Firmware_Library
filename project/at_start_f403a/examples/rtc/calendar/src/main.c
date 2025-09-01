@@ -88,6 +88,12 @@ int main(void)
 
   at32_board_init();
 
+	// for loop delay 2000ms
+  for (int i = 0; i < 2000; i++)
+  {
+    delay_ms(1);
+  }
+	
   uart_print_init(115200);
 
   /* config calendar */
@@ -108,6 +114,7 @@ int main(void)
   {
     if(rtc_flag_get(RTC_TS_FLAG) != RESET)
     {
+      uint32_t divider = rtc_divider_get();
       at32_led_toggle(LED3);
 
       /* get time */
@@ -115,7 +122,9 @@ int main(void)
 
       /* print time */
       printf("%d/%d/%d ", calendar.year, calendar.month, calendar.date);
-      printf("%02d:%02d:%02d %s\r\n", calendar.hour, calendar.min, calendar.sec, weekday_table[calendar.week]);
+      uint32_t divider1 = rtc_divider_get();
+      uint32_t microseconds = (32767 - divider1) * 1000000 / 32768;
+      printf("%02d:%02d:%02d.%06d %s (divider:%d, divider1:%d)\r\n", calendar.hour, calendar.min, calendar.sec, microseconds, weekday_table[calendar.week], divider, divider1);
 
       /* wait for the register write to complete */
       rtc_wait_config_finish();
